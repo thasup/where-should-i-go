@@ -9,7 +9,7 @@ const Header = () => {
     const classes = useStyles();
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={{ backgroundColor: "#f50057" }}>
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h5" className={classes.title}>
                     Where Should I Go?

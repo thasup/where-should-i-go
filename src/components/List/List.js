@@ -15,11 +15,13 @@ import useStyles from "./styles.js";
 const List = ({ places }) => {
     const classes = useStyles();
     const [type, setType] = useState("restaurants");
-    const [rating, setRating] = useState("");
+    const [rating, setRating] = useState("all");
 
     return (
         <div className={classes.container}>
-            <Typography variant="h4">Interesting Place Around You</Typography>
+            <Typography variant="h4">
+                Find interesting place around you
+            </Typography>
             <FormControl className={classes.formControl}>
                 <InputLabel id="type">Type</InputLabel>
                 <Select
@@ -39,7 +41,7 @@ const List = ({ places }) => {
                     value={rating}
                     onChange={(e) => setRating(e.target.value)}
                 >
-                    <MenuItem value="">All</MenuItem>
+                    <MenuItem value="all">All</MenuItem>
                     <MenuItem value="3">Above 3 Stars</MenuItem>
                     <MenuItem value="4">Above 4 Stars</MenuItem>
                     <MenuItem value="4.5">Above 4.5 Stars</MenuItem>

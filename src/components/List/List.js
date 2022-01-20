@@ -12,10 +12,16 @@ import {
 import Details from "../Details/Details";
 import useStyles from "./styles.js";
 
-const List = ({ places, childClicked, isLoading }) => {
+const List = ({
+    places,
+    childClicked,
+    isLoading,
+    type,
+    setType,
+    rating,
+    setRating,
+}) => {
     const classes = useStyles();
-    const [type, setType] = useState("restaurants");
-    const [rating, setRating] = useState("all");
 
     const [elementRef, setElementRef] = useState([]);
 

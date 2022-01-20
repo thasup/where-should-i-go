@@ -23,15 +23,15 @@ const App = () => {
         );
     }, []);
 
-    useEffect(() => {
-        if (bounds) {
-            setIsLoading(true);
-            getPlacesData(bounds.sw, bounds.ne).then((data) => {
-                setPlaces(data);
-                setIsLoading(false);
-            });
-        }
-    }, [bounds]);
+    // useEffect(() => {
+    //     if (bounds) {
+    //         setIsLoading(true);
+    //         getPlacesData(bounds.sw, bounds.ne).then((data) => {
+    //             setPlaces(data);
+    //             setIsLoading(false);
+    //         });
+    //     }
+    // }, [bounds]);
 
     return (
         <>
@@ -40,7 +40,7 @@ const App = () => {
             <Grid container spacing={3} style={{ width: "100%" }}>
                 <Grid item xs={12} md={4}>
                     <List
-                        places={places}
+                        // places={places}
                         childClicked={childClicked}
                         isLoading={isLoading}
                     />

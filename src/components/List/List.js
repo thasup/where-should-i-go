@@ -12,21 +12,24 @@ import {
 import Details from "../Details/Details";
 import useStyles from "./styles.js";
 
-const List = ({ places, childClicked, isLoading }) => {
+import places from "../../api/sample.json";
+
+const List = ({ childClicked, isLoading }) => {
     const classes = useStyles();
     const [type, setType] = useState("restaurants");
     const [rating, setRating] = useState("all");
 
-    const [elementRef, setElementRef] = useState([]);
+    // const [elementRef, setElementRef] = useState([]);
 
-    useEffect(() => {
-        const refs = Array(places?.length)
-            .fill()
-            .map((_, index) => elementRef[index] || createRef());
+    // useEffect(() => {
+    //     const refs = Array(places?.length)
+    //         .fill()
+    //         .map((_, index) => elementRef[index] || createRef());
 
-        setElementRef(refs);
-    }, [places]);
+    //     setElementRef(refs);
+    // }, [places]);
 
+    console.log(Object.values(places.data));
     return (
         <div className={classes.container}>
             <Typography variant="h4">
@@ -64,12 +67,12 @@ const List = ({ places, childClicked, isLoading }) => {
                         </Select>
                     </FormControl>
                     <Grid container spacing={3} className={classes.list}>
-                        {places?.map((place, index) => (
+                        {Object.values(places.data)?.map((place, index) => (
                             <Grid item key={index} xs={12}>
                                 <Details
                                     place={place}
                                     selected={Number(childClicked) === index}
-                                    refProp={elementRef[index]}
+                                    // refProp={elementRef[index]}
                                 />
                             </Grid>
                         ))}

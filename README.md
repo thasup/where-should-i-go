@@ -1,12 +1,12 @@
 <!-- Add banner here -->
-![Project Preview](docs/where should i go preview.png)
+![Project Preview](docs/preview.png)
 
 # Where Should I Go?
 
 <!-- Describe your project in brief -->
 Don't know where to go? 
 
-Why not use this amazing app to find interesting places around your area on *google maps* with cool informations from *TripAdvisor*!
+Why not use this amazing app to find interesting places around your area on **google maps** with cool informations from **TripAdvisor**!
 
 <!-- [where-should-i-go](https://thasup-travel-app.herokuapp.com/) -->
 

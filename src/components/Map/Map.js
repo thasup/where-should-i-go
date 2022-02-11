@@ -22,13 +22,6 @@ const Map = ({
                 bootstrapURLKeys={{
                     key: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
                 }}
-                defaultCenter={{
-                    center: {
-                        lat: 59.95,
-                        lng: 30.33,
-                    },
-                    zoom: 11,
-                }}
                 center={coordinates}
                 defaultZoom={15}
                 margin={[50, 50, 50, 50]}
@@ -39,6 +32,7 @@ const Map = ({
                     setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
                 }}
                 onChildClick={(child) => {
+                    console.log("onChildClick", child);
                     setChildClicked(child);
                 }}
             >

@@ -24,7 +24,8 @@ Why not use this amazing app to find interesting places around your area on **go
 
 [(Back to top)](#table-of-contents)
 
-[Where Should I Go?](https://thasup-suppee.herokuapp.com/)
+<!-- [Where Should I Go?](https://thasup-suppee.herokuapp.com/) -->
+Work in progress...
 
 <!-- # Features -->
 

@@ -1,35 +1,41 @@
 <!-- Add banner here -->
-![Project Preview](docs/preview.png)
+
+![Project Preview](docs/preview2.png)
 
 # Where Should I Go?
 
 <!-- Describe your project in brief -->
-Don't know where to go? 
+
+Don't know where to go?
 
 Why not use this amazing app to find interesting places around your area on **google maps** with cool informations from **TripAdvisor**!
 
-<!-- [where-should-i-go](https://thasup-travel-app.herokuapp.com/) -->
-
 # Table of contents
 
--   [Where Should I Go](#where-should-i-go)
--   [Table of contents](#table-of-contents)
--   [Demo](#demo)
--   [Install](#install)
--   [Setup ENV](#setup-env)
--   [Highlight Technology](#highlight-technology)
-<!-- -   [Features](#features) -->
+- [Where Should I Go](#where-should-i-go)
+- [Table of contents](#table-of-contents)
+- [Demo](#demo)
+- [Features](#features)
+- [Install](#install)
+- [Setup ENV](#setup-env)
+- [Highlight Technology](#highlight-technology)
 
 # Demo
 
 [(Back to top)](#table-of-contents)
 
-<!-- [Where Should I Go?](https://thasup-suppee.herokuapp.com/) -->
-Work in progress...
+[DEMO LINK](https://thasup-where-should-i-go.netlify.app/)
 
-<!-- # Features -->
+# Features
 
-<!-- [(Back to top)](#table-of-contents) -->
+[(Back to top)](#table-of-contents)
+
+- Find restaurants around your area
+- Find hotels around your area
+- Find attractions/landmarks around your area
+- Find all of those anywhere in the world as you pan on google maps
+- Filter information cards by rating
+- See summary information on cards from Tripadvisor API
 
 # Install
 
@@ -56,6 +62,7 @@ Work in progress...
 
 [(Back to top)](#table-of-contents)
 
--   Google Maps API
--   MUI
--   React
+- Google Maps API
+- MUI
+- React
+- API

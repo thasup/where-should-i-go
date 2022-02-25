@@ -3,7 +3,7 @@
 ![Project Preview](docs/preview2.png)
 
 # Where Should I Go?
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/179c58ef-b5fb-4e4c-a3f8-be8dead42956/deploy-status)](https://app.netlify.com/sites/thasup-where-should-i-go/deploys)
 <!-- Describe your project in brief -->
 
 Don't know where to go?

@@ -3,7 +3,9 @@
 ![Project Preview](docs/preview2.png)
 
 # Where Should I Go?
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/179c58ef-b5fb-4e4c-a3f8-be8dead42956/deploy-status)](https://app.netlify.com/sites/thasup-where-should-i-go/deploys)
+
 <!-- Describe your project in brief -->
 
 Don't know where to go?
@@ -34,6 +36,7 @@ Why not use this amazing app to find interesting places around your area on **go
 - Find hotels around your area
 - Find attractions/landmarks around your area
 - Find all of those anywhere in the world as you pan on google maps
+- Freely search where you want to find interesting places around the world via search box
 - Filter information cards by rating
 - See summary information on cards from Tripadvisor API
 

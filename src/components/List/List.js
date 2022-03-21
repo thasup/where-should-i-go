@@ -39,7 +39,7 @@ const List = ({
       <Typography variant="h4">Find interesting place around you</Typography>
       {isLoading ? (
         <div className={classes.loading}>
-          <CircularProgress size="5rem" />
+          <CircularProgress color="inherit" size="5rem" />
         </div>
       ) : (
         <>

@@ -4,6 +4,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Autocomplete } from "@react-google-maps/api";
 
 import useStyles from "./styles";
+import { GAevent } from "../../index";
 
 const Header = ({ onLoad, onPlaceChanged }) => {
   const classes = useStyles();
@@ -29,6 +30,14 @@ const Header = ({ onLoad, onPlaceChanged }) => {
                   root: classes.inputRoot,
                   input: classes.inputInput,
                 }}
+                onChange={(e) =>
+                  GAevent(
+                    "engagement",
+                    "search",
+                    "search_location",
+                    e.target.value
+                  )
+                }
               />
             </div>
           </Autocomplete>

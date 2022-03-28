@@ -6,6 +6,7 @@ import { getPlacesData } from "./api";
 import Header from "./components/Header/Header";
 import List from "./components/List/List";
 import Map from "./components/Map/Map";
+import { initGA } from "./index";
 
 const App = () => {
   const [places, setPlaces] = useState([]);
@@ -20,6 +21,9 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    // initialize google analytics
+    initGA();
+
     navigator.geolocation.getCurrentPosition(
       ({ coords: { latitude, longitude } }) => {
         setCoordinates({ lat: latitude, lng: longitude });
